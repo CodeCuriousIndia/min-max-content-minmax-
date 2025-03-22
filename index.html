@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic: minmax(), min-content, max-content</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .container{
+        display: grid;
+        width: 80%;
+        margin: 40px auto 0;
+        grid-template-columns: minmax(100px, 50%) 1fr 1fr;
+        grid-template-rows: repeat(2, minmax(100px, min-content));
+
+
+    }
+    .items1{background-color: yellowgreen;}
+    .items2{background-color: orangered;}
+    .items3{background-color: royalblue;}
+    .items4{background-color: hotpink;}
+    .items5{background-color: slateblue;}
+    .items6{background-color: goldenrod;}
+   
+</style>
+</head>
+<body>
+    <h1>Topic: minmax(), min-content, max-content</h1>
+    <div class="container">
+        <div class="items1">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime amet eius nulla alias minus, asperiores placeat aliquid distinctio, sit culpa voluptas modi, rem officiis natus saepe iusto debitis animi delectus.</div>
+        <div class="items2">Two</div>
+        <div class="items3">Three Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, sapiente.</div>
+        <div class="items4">Four</div>
+        <div class="items5">Five Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni aspernatur eius necessitatibus quo dignissimos porro facilis omnis mollitia. Mollitia magnam sequi animi voluptatum praesentium, nobis cupiditate vitae saepe veniam pariatur sit deleniti accusantium harum ducimus tempore delectus dignissimos incidunt architecto quidem eveniet nulla quas rerum libero repellendus? Neque, sunt molestiae.</div>
+        <div class="items6">Six</div>
+    </div>
+    
+</body>
+</html>
